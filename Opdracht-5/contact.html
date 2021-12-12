@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<style>
+    p {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 14px;
+        color: grey;
+    }
+    h1 {
+        text-align: left; text-decoration: underline; color: blue;
+    }
+    div {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 14px;
+        color: grey;   
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+      <!-- hier zet je de code in de head tags -->
+    <title> Contact </title>
+</head>
+
+<body>
+    <!-- hier zet je de code in de body tags-->
+    <header>
+        <h1> Contact Formulier: </h1>
+    </header>
+    <main>
+        <form name="contact" method="POST" data-netlify="true">
+            <p> Naam: <input type="text" name="Naam" required> </p>        
+            <p> Mail-adres: <input type="email" id="email" name="email" required> </p>
+            <p>Telefoonnummer: <input type="Tel" id="Telefoon" name="Telefoon" pattern="[0-9]{2}-[0-9]{8}" required> </p>
+            <p> Leeftijd: <input type="number" id="Leeftijd" name="Leeftijd" min="1" max="150"> </p>
+            <p> Geboortedatum: <input type="date" id="Geboortedatum" name="Geboortedatum"> </p>
+            <div>
+                Geslacht: 
+                <input type="radio" id="Geslacht" name="Geslacht" value="Man"> Man
+                <input type="radio" id="Geslacht1" name="Geslacht1" value="Vrouw"> Vrouw <br>
+                <br>
+            </div>
+            <div>
+                Favourite keuken: 
+                <input type="checkbox" id="Keuken1" name="Keuken1" value="Frans">
+                <label for="Keuken1"> Frans</label>
+                <input type="checkbox" id="Keuken2" name="Keuken2" value="Italians"> <label for="Keuken2"> Italians</label>
+                <input type="checkbox" id="Keuken3" name="Keuken3" value="Spaans"> <label for="Keuken3"> Spaans</label>
+                <input type="checkbox" id="Keuken4" name="Keuken4" value="Arabisch"> <label for="Keuken4"> Arabisch</label>
+            </div>
+            <p> Favorite Apron kleur: <input type="color" id="kleur" name="kleur"> </p>
+            <p> Upload je laateste recept: <input type="file" id="email" name="recept"> </p>
+            <p> URL van het recept: <input type="url" id="recpturl" name="recpturl"> </p>
+            <p> <textarea id="Biografie" name="Biografie" cols="100" rows="20"> </textarea></p>
+            <br>
+            <div>
+                <input type="reset" value="Reset" name="tekstveld">
+                <input type="submit" value="Send" name="tekstveld">
+            </div>
+        </form>
+            <br>
+        <a href="index.html"> Ga terug naar de home pagina </a>
+    </main>
+</body>
